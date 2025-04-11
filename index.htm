@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Whack the Mole</title>
+  <link href="./output.css" rel="stylesheet" />
+</head>
+<body class="bg-lime-600 min-h-screen flex flex-col items-center">
+  <h1 class="head text-center text-white text-3xl sm:text-4xl md:text-5xl font-bold p-3">  Whack The Mole!</h1>
+  <main class="flex justify-center items-center w-full px-4 relative">
+    <div class="mouse absolute left-0 top-0 z-50 pointer-events-none"></div>
+    <div class="garden w-full max-w-screen-md grid grid-cols-3 gap-4 p-5 rounded-2xl mt-4">
+      <div class="circle relative rounded-full text-center bg-yellow-900 h-20 w-20 sm:h-24 sm:w-24 shadow-[inset_0px_10px_0px_5px] shadow-orange-950 overflow-hidden">
+        <img src="mole.png" class="nice absolute bottom-0 h-16 ml-3 hidden" />
+      </div>
+      <div class="circle relative rounded-full text-center bg-yellow-900 h-20 w-20 sm:h-24 sm:w-24 shadow-[inset_0px_10px_0px_5px] shadow-orange-950 overflow-hidden"></div>
+      <div class="circle relative rounded-full text-center bg-yellow-900 h-20 w-20 sm:h-24 sm:w-24 shadow-[inset_0px_10px_0px_5px] shadow-orange-950 overflow-hidden"></div>
+      <div class="circle relative rounded-full text-center bg-yellow-900 h-20 w-20 sm:h-24 sm:w-24 shadow-[inset_0px_10px_0px_5px] shadow-orange-950 overflow-hidden"></div>
+      <div class="circle relative rounded-full text-center bg-yellow-900 h-20 w-20 sm:h-24 sm:w-24 shadow-[inset_0px_10px_0px_5px] shadow-orange-950 overflow-hidden"></div>
+      <div class="circle relative rounded-full text-center bg-yellow-900 h-20 w-20 sm:h-24 sm:w-24 shadow-[inset_0px_10px_0px_5px] shadow-orange-950 overflow-hidden"></div>
+      <div class="circle relative rounded-full text-center bg-yellow-900 h-20 w-20 sm:h-24 sm:w-24 shadow-[inset_0px_10px_0px_5px] shadow-orange-950 overflow-hidden"></div>
+      <div class="circle relative rounded-full text-center bg-yellow-900 h-20 w-20 sm:h-24 sm:w-24 shadow-[inset_0px_10px_0px_5px] shadow-orange-950 overflow-hidden"></div>
+      <div class="circle relative rounded-full text-center bg-yellow-900 h-20 w-20 sm:h-24 sm:w-24 shadow-[inset_0px_10px_0px_5px] shadow-orange-950 overflow-hidden"></div>
+    </div>
+  </main>
+
+  <div class="scores w-full max-w-screen-md flex justify-center items-center gap-3 mt-4">
+    <h2 class="text-2xl sm:text-3xl text-white">Score:</h2>
+    <p class="point text-2xl sm:text-3xl text-white">0</p>
+  </div>
+
+  <div class="scores flex justify-center mt-4 mb-6">
+    <button class="btn px-6 py-2 bg-orange-950 text-white rounded-xl text-lg hover:bg-orange-900 transition">
+      Reset
+    </button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

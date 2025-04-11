@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import "tailwindcss";
+
+
+.mouse{
+    height: 60px;
+    width:60px;
+    background-image: url("hammer.png");
+    background-size: cover;
+   transform: translate(-50%,-70%); 
+    transition: transform 0.1s ease;
+    pointer-events: none;
+   
+}
+
+.head{
+    font-family: "Press Start 2P", system-ui;
+}
+
+.scores{
+    font-family: "Play", sans-serif;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   cursor: none;
+
+}
+
+
+.nice{
+    animation: moveup 0.5s ease-out  ;
+}
+
+@keyframes moveup {
+    0%{
+        transform:  translateY(100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+    
+}
+
