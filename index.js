@@ -4,10 +4,8 @@ const data = document.querySelector(".point");
 const press= document.querySelector(".btn")
 const audio = new Audio("smash.mp3");
 const music = new Audio("forest.mp3");
-
-    music.loop = true;
-    music.volume = 0.2;
-    music.play();
+music.loop = true;
+music.volume = 0.2;
 
 let point =0;
 
@@ -55,8 +53,11 @@ const run = () => {
      }, 1000);
 }
 
-run();
 
+document.getElementById("startGame").addEventListener("click", () => {
+    music.play();
+    run(); 
+  });
 
 
 
